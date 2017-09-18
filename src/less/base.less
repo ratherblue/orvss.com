@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  color: @text-color;
+  line-height: 1.5;
+  text-size-adjust: 100%;
+  font-weight: 300;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: @font-size;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @link-hover-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+@media screen {
+  dd {
+    margin: 0;
+    a {
+      word-wrap: break-word;
+    }
+  }
+}
+
+sup {
+  line-height: 1;
+}
+
+address {
+  font-style: normal;
+}

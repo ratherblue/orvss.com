@@ -1,0 +1,21 @@
+# encoding: UTF-8
+sourceEncoding: UTF-8
+outputEncoding: UTF-8
+urlEscapingCharset: UTF-8
+sourceRoot: src
+outputRoot: docs
+logFile: log.fmpp
+datetimeFormat: "MMMM d, yyyy h:mm a zzz"
+caseSensitive
+borders: [
+  header("<#import '/templates/common.ftl' as c />", **/*.html, /pages/*.ftl)
+]
+modes: [
+  ignore(/templates/, /less/, rev-manifest.json, .DS_Store)
+  copy(*.png, crossdomain.xml, *.ico, *.txt, *.htaccess, CNAME)
+]
+data: {
+	event: json(2017.json)
+  domain: orvss.com
+    mapsApiKey: AIzaSyC-W_eXa78wokf2H5cv-RBlb1GuLk_Im2Y
+}

@@ -1,0 +1,318 @@
+<#ftl strip_text=true />
+
+<@page.layout subtitle="Coming soon">
+    <#compress>
+        <@callout />
+
+        <@menu />
+        <@overview />
+        <@deadlines />
+        <@keynote />
+        <@schedule />
+        <@contact />
+        <#--<@registration />-->
+        <#--<@sponsors />-->
+    </#compress>
+</@page.layout>
+
+
+<#macro callout>
+    <div class="callout">
+        <p>${event.host}</p>
+        <p>${headline()}</p>
+
+        <time class="date" datetime="${event.date}">${event.date?date('yyyy-MM-dd')?string.full}</time>
+        <@address />
+    </div>
+</#macro>
+
+
+<#function headline>
+    <#local occurance = event.date?date('yyyy-MM-dd')?string('yyyy')?number - 1969 />
+    <#return occurance + "<sup>th</sup> Annual Ohio River Valley Soils Seminar" />
+</#function>
+
+
+<#macro menu>
+    <#local links = [
+        {
+            "title": "Overview",
+            "url": "#overview"
+        },
+        {
+            "title": "Keynote",
+            "url": "#keynote"
+        },
+        {
+            "title": "Schedule",
+            "url": "#schedule"
+        },
+        {
+            "title": "Contact Information",
+            "url": "#contact"
+        },
+        {
+            "title": "Registration",
+            "url": "#registration"
+        },
+        {
+            "title": "Sponsors",
+            "url": "#sponsors"
+        }
+    ]/>
+
+    <ul role="menu" class="event-menu"><#t>
+        <#list links as link>
+            <li><a href="${link.url}">${link.title}</a></li><#t>
+        </#list>
+    </ul><#t>
+</#macro>
+
+
+<#---
+    Address
+-->
+<#macro address showLodging=false>
+    <address class="address">
+        <a href="${event.address.url}" target="_blank">${event.address.line1}</a><br>
+        ${event.address.line2}<br>
+        ${event.address.city}, ${event.address.state} ${event.address.zip}<br>
+        <a href="tel:${event.address.phone?join("")}" class="phone-number">${event.address.phone?join("-")}</a>
+    </address>
+
+    <#--
+    <#if showLodging>
+        <h3>Webpage Lodging Options</h3>
+
+        <p><a href="http://www.marriott.com/hotels/travel/lexky-griffin-gate-marriott-resort-and-spa/" target="_blank">http://www.marriott.com/hotels/travel/lexky-griffin-gate-marriott-resort-and-spa/</a></p>
+    </#if>-->
+
+
+
+    <iframe class="event-map" frameborder="0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.2468754875963!2d-84.5161176495454!3d39.1008492424314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b150f8c89be3%3A0x57adb6d0d0e8357e!2sHilton+Cincinnati+Netherland+Plaza!5e0!3m2!1sen!2sus!4v1505702196106&key=${mapsApiKey}" allowfullscreen></iframe>
+</#macro>
+
+
+<#macro overview>
+    <h2 id="overview">Overview</h2>
+    <#list event.overview as paragraph>
+        <p>${paragraph}</p>
+    </#list>
+</#macro>
+
+
+<#macro deadlines>
+    <h2 id="deadlines">Deadlines</h2>
+
+    <table class="deadline-table">
+        <tbody>
+            <#list event.deadlines as deadline>
+                <tr>
+                    <td>${deadline.name}</td>
+                    <td>${deadline.date?date('yyyy-MM-dd')?string.full}</td>
+                </tr>
+            </#list>
+        </tbody>
+    </table>
+</#macro>
+
+
+<#macro keynote>
+    <h2 id="keynote">Keynote</h2>
+
+    <div class="keynote-details" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" src="img/keynote.png" alt="Keynote speaker" title="${event.keynote.name}">
+
+        <div class="speaker">
+            <div class="name">
+                <span itemprop="name">${event.keynote.name}</span>, <span itemprop="honorificSuffix">${event.keynote.title}</span>
+            </div>
+        </div>
+    </div>
+
+    <#list event.keynote.description as paragraph>
+        <p>${paragraph}</p>
+    </#list>
+</#macro>
+
+
+<#macro contact>
+    <#compress>
+        <h2 id="contact">Contact</h2>
+
+        <#list event.contact?keys as key>
+            <#if key == "registration">
+                <h3>Registration</h3>
+            <#elseif key == "exhibitors">
+                <h3>Exhibitors</h3>
+            </#if>
+
+            <#local contactOption = event.contact[key] />
+
+            ${contactOption.name}<#if contactOption.title??>, ${contactOption.title!}</#if><br>
+            <a href="mailto:${contactOption.email}">${contactOption.email}</a><br>
+            <a href="tel:${contactOption.phone?join("")}" class="phone-number">${contactOption.phone?join("-")}</a><br>
+        </#list>
+
+        <h3>Location and Lodging</h3>
+
+        <@address showLodging=true />
+    </#compress>
+</#macro>
+
+
+<#macro schedule>
+    <h2 id="schedule">Schedule</h2><#t>
+
+    <p>Seminar schedule has not been finalized as of September 29, 2015 and will be available soon after all presentations have been selected.</p><#t>
+    <p>Registration for the ORVSS XLVI Seminar is planned to start at 7:30 AM, with the program expected to extend from 8:15 AM until 4:45 PM.</p><#t>
+    <p>It is anticipated that 7.5 PDHs will be awarded at the completion of the  seminar.</p><#t>
+
+    <#compress>
+    <table class="schedule-table"><#t>
+        <tbody><#t>
+            <#list event.schedule as item>
+                <tr><#t>
+                    <td>${item.time[0]?time("hh:mm a")?string("h:mm")}–${item.time[1]?time("hh:mm a")?string("h:mm a")?lower_case}</td><#t>
+                    <td><#t>
+                        ${item.name}<#t>
+                        <#if item.speakers?? || item.speaker??>–</#if>
+                        <#if item.speakers??>
+                            <#list item.speakers as person>
+                                <@speaker person=person /><#t>
+                                <#if (item.speakers?size > 2)>
+                                    <#if person_has_next>, </#if><#t>
+                                <#else>
+                                    <#if person_has_next> and </#if><#t>
+                                </#if>
+                            </#list>
+                        <#elseif item.speaker??>
+                            <@speaker person=item.speaker /><#t>
+                        </#if>
+                    </td><#t>
+                </tr><#t>
+            </#list>
+        </tbody><#t>
+    </table><#t>
+    </#compress>
+</#macro>
+
+<#macro speaker person>
+    ${person.name}<#if person.title??>, ${person.title}</#if><#rt>
+    <#if person.company??>, ${person.company}</#if><#lt>
+</#macro>
+
+<#macro registration>
+    <h2 id="registration">Registration</h2>
+
+    <p>Note: To register via mail, download the <a href="${event.pdf}">ORVSS XLVI Flyer</a> and use the registration form.</p>
+
+    <@form />
+
+    <p><strong>Note:</strong> Pre-registration is essential to ensure receipt of bound proceedings and to facilitate morning registration. Also, Early Registration ends November 21, 2015 with Regular Registration beginning November 23, 2015.</p>
+
+    <#local prices = event.registration.prices />
+
+    <table class="deadline-table">
+        <thead>
+            <tr>
+                <th colspan="2">Students</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Early Full-time Student Registration
+                    (Postmarked by ${event.registration.earlyDeadline?date('yyyy-MM-dd')?string.long})
+                </td>
+                <td>${prices.student.early}</td>
+            </tr>
+            <tr>
+                <td>Regular Full-time Student Registration</td>
+                <td>${prices.student.regular}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2">Non-students</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Early Individual Registration
+                    (Postmarked by ${event.registration.earlyDeadline?date('yyyy-MM-dd')?string.long})
+                </td>
+                <td>${prices.nonStudent.early}</td>
+            </tr>
+            <tr>
+                <td>Regular Individual Registration</td>
+                <td>${prices.nonStudent.regular}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2">Exhibitors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Exhibitor Registration</td>
+                <td>${prices.exhibitors.regular}</td>
+            </tr>
+            <tr>
+                <td>Additional Individual Registration with Paid Exhibitor (Limit 2 per paid Exhibitor Registration)</td>
+                <td>${prices.exhibitors.additional}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Cost of Registration Includes:</h3>
+
+    <ul>
+        <li>Seminar admission and Exhibitor’s Fair</li>
+        <li>Coffee and pastries during registration </li>
+        <li>Lunch provided by Marriott</li>
+        <li>Morning and afternoon refreshment breaks</li>
+        <li>Bound copy of ORVSS XLVI Proceedings</li>
+        <li>Certificate for 7.5 PDHs</li>
+    </ul>
+</#macro>
+
+<#macro form>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="registration-form">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="KKEQYAWC62XH6">
+        <input type="hidden" name="on0" value="Registration Type">
+        <input type="hidden" name="on1" value="Registrant Name">
+        <input type="hidden" name="currency_code" value="USD">
+
+        <label class="form-label" for="os0">Registration type</label>
+        <select id="os0" name="os0" class="dropdown" required>
+            <#--<option value="Regular Individual Registration">Regular Individual Registration $175.00 USD</option>-->
+            <option value="Early Individual Registration">Early Individual Registration $150.00 USD</option>
+            <#--<option value="Student Individual Registration">Student Individual Registration $50.00 USD</option>-->
+            <option value="Early Student Individual Registration">Early Student Individual Registration $25.00 USD</option>
+            <option value="Exhibitor Registration">Exhibitor Registration $425.00 USD</option>
+            <option value="Additional Individual Registration with Paid Exhibitor">Additional Individual Registration with Paid Exhibitor $75.00 USD</option>
+        </select>
+
+        <label class="form-label">Registrant name(s)</label>
+        <input type="text" name="os1" maxlength="200" class="text-input">
+
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+</#macro>
+
+
+<#macro sponsors>
+    <h2 id="sponsors">Sponsors</h2>
+
+    <ul>
+        <#list event.sponsors as sponsor>
+            <li>${sponsor}</li>
+        </#list>
+    </ul>
+</#macro>

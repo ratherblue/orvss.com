@@ -1,0 +1,246 @@
+{
+    "host": "ASCE Cincinnati Section Geotechnical Group",
+    "topic": "“Infrastructure Innovation in Geotechnical Design",
+    "date": "2017-11-17",
+    "pdf": "ORVSS XLVI Seminar.pdf",
+    "address": {
+        "line1": "Hilton Netherland Plaza",
+        "line2": "35 W 5th Street",
+        "city": "Cincinnati",
+        "state": "Ohio",
+        "zip": "45202",
+        "phone": ["513", "421", "9100"],
+        "url": "http://www3.hilton.com/en/hotels/ohio/hilton-cincinnati-netherland-plaza-CVGNPHF/index.html"
+    },
+    "overview": [
+        "With the American infrastructure scoring a D+ in the most recent ASCE’s Report Card for America’s Infrastructure, the push to invest in the same is bound to increase. For this investment to be fruitful, innovative and economical construction practices would be required. As such, infrastructure innovation in geotechnical design will become increasingly important. The Geotechnical Group of the ASCE Cincinnati Section is issuing this Call for Papers with emphasis on “Infrastructure Innovation in Geotechnical Design” for the 48th Annual Ohio River Valley Soils Seminar (ORVSS XLVIII) in Cincinnati, Ohio. Papers may include geotechnical design, instrumentation, investigation, construction, case histories, etc. of various types of infrastructure, which may include, but are not limited to, roads, bridges, tunnels, railway, dams and levees, power plants, etc. and should highlight innovative techniques or technologies. Papers will be selected to be presented during the one-day seminar with the papers distributed to the attendees as part of the seminar proceedings. The goal of ORVSS XLVIII is to provide geotechnical engineers, geologists, contractors, material suppliers, and other geotechnical practitioners an opportunity to share experiences on previous projects in the geotechnical aspects of infrastructure to continue the advancement of our professional field."
+    ],
+    "deadlines": [
+        {
+            "name": "Receipt of typewritten one-page abstract",
+            "date": "2017-08-18"
+        },
+        {
+            "name": "Notice of acceptance",
+            "date": "2017-08-25"
+        },
+        {
+            "name": "Receipt of final papers",
+            "date": "2017-09-30"
+        },
+        {
+            "name": "Receipt of presentations for seminar",
+            "date": "2017-10-31"
+        }
+    ],
+    "keynote": {
+        "name": "Dr. Timothy D. Stark",
+        "title": "Professor",
+        "location": "2217 Newmark Civil Engineering Bldg, 205 N. Mathews, Urbana Illinois 61801",
+        "image": "img/keynote.png",
+        "description": [
+            "Timothy D. Stark is a Professor of Civil and Environmental Engineering at the University of Illinois at Urbana-Champaign with an expertise in Geotechnical Engineering. Dr. Stark has been conducting interdisciplinary research and teaching on the static an d seismic stability of natural and manmade slopes, such as dams, levees, floodwalls, and waste containment facilities, railroad geotechnics, geosynthetics and geomembranes, soil liquefaction during earthquakes, and stabilization and behavior of dredged material containment areas. He is currently researching three-dimensional slope stability, inverse analyses of landslides, heating events in waste containment facilities, and jet grouting. Dr. Stark has received a number of awards for his research, teachin g, and service activities.",
+            "Dr. Stark will be presenting on “2D and 3D Unsaturated and Transient Seepage Analyses for Landside Excavations near Levees and Floodwalls” (abstract below):",
+            "Levee and floodwall seepage models based on two-dimensional (2D) conditions can under-predict landside vertical hydraulic gradients and uplift pressures due to excavations and convex bends. The Sherman Island levee system is used to calibrate a three-dimensional (3D) seepage model to evaluate the effect of finite landside excavations and convex levee bends on landside seepage. The calibrated model shows that a 3D analysis is recommended for a landside excavation with an aspect ratio (length to width) less than 1L:1.5W. For drainage canals and ditches that parallel a levee or floodwall, e.g., in New Orleans along the Inner Harbor Navigation Canal, and are wider than 15 m, gradients at the excavation center are essentially equal to 2D vertical gradients but greater than 2D gradients near the excavation sidewalls. The Sherman Island calibrated seepage model also shows concave bends diverge seepage and yield lower vertical gradients than 2D models. Varying the degree of levee curvature indicates that sharper convex bends cause vertical gradients that can be about 150% greater than 2D analyses."
+        ]
+    },
+    "contact": {
+        "registration": {
+            "name": "Akshat Saxena",
+            "title": "EI",
+            "email": "asaxena@geotechnology.com",
+            "phone": ["859", "746", "9400"]
+        },
+        "exhibitors": {
+            "name": "Akshat Saxena",
+            "title": "EI",
+            "email": "asaxena@geotechnology.com",
+            "phone": ["859", "746", "9400"]
+        }
+    },
+    "schedule": [
+        {
+            "name": "Exhibitor Registration and Setup",
+            "time": ["6:30 am", "7:30 am"]
+        },
+        {
+            "name": "<strong>Registration</strong>",
+            "time": ["7:20 am", "8:00 am"]
+        },
+        {
+            "name": "Welcome Remarks",
+            "time": ["8:00 am", "8:15 am"]
+        },
+        {
+            "name": "“Grout Curtain Construction for the Thornton Reservoir Project”",
+            "time": ["8:15 am", "8:45 am"],
+            "speakers": [
+                {
+                    "name": "Jonathon R. Bulger",
+                    "title": "PE"
+                },
+                {
+                    "name": "Raymond J. Franz",
+                    "title": "PE, D.GE",
+                    "company": "Hayward Baker Inc."
+                }
+            ]
+        },
+        {
+            "name": "“Grouting Solutions for Cincinnati Music Hall”",
+            "time": ["8:45 am", "9:15 am"],
+            "speaker": {
+                "name": "George C. Webb",
+                "title": "PE, LEED AP",
+                "company": "Terracon"
+            }
+        },
+        {
+            "name": "“Jet Grouting Solution for the Resolution of Offshore Bridge Pier Retrofit Challenges”",
+            "time": ["9:15 am", "9:45 am"],
+            "speakers": [
+                {
+                    "name": "Lucian P. Spiteri",
+                    "title": "PE"
+                },
+                {
+                    "name": "John M. Stanbury"
+                },
+                {
+                    "name": "Alberto Morgante",
+                    "company": "Moretrench"
+                }
+            ]
+        },
+        {
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["9:45 am", "10:15 am"]
+        },
+        {
+            "name": "“Formation Grouting for the Port of Miami Tunnel”",
+            "time": ["10:15 am", "10:45 am"],
+            "speaker": {
+                "name": "Rick Deschamps",
+                "title": "PE, PhD",
+                "company": "Nicholson Construction Co."
+            }
+        },
+        {
+            "name": "“Insitu Stabilization of Soils by Injection of High-Density Polyurethane: Principles and Applications”",
+            "time": ["10:45 am", "11:15 am"],
+            "speaker": {
+                "name": "Randall W. Brown",
+                "title": "PE, PhD",
+                "company": "URETEK USA, Inc."
+            }
+        },
+        {
+            "name": "“Laboratory Study of Acrylate Grout”",
+            "time": ["11:15 am", "11:45 am"],
+            "speakers": [
+                {
+                    "name": "L. Sebastian Bryson",
+                    "title": "PE, PhD, MASCE"
+                },
+                {
+                    "name": "Ryan Ortiz",
+                    "title": "EIT",
+                    "company": "University of Kentucky and Terracon Consultants, Inc."
+                }
+            ]
+        },
+        {
+            "name": "<strong>Lunch — Keynote Introduction</strong>",
+            "time": ["11:45 am", "12:45 pm"]
+        },
+        {
+            "name": "Keynote Speaker",
+            "time": ["12:45 pm", "1:45 pm"],
+            "speaker": {
+                "name": "James Warner",
+                "title": "Consulting Engineer",
+                "company": "Warner Engineering Services"
+            }
+        },
+        {
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["1:45 pm", "2:00 pm"]
+        },
+        {
+            "name": "“Mine Remediation at the I-470/Pryor Road Interchange”",
+            "time": ["2:00 pm", "2:30 pm"],
+            "speaker": {
+                "name": "Sheryl D. Gallagher",
+                "title": "PE",
+                "company": "GEOTECHNOLOGY, INC."
+            }
+        },
+        {
+            "name": "“Rough River Dam: Foundation Investigation and Remediation through Grouting”",
+            "time": ["2:30 pm", "3:00 pm"],
+            "speaker": {
+                "name": "Will Ailstock",
+                "title": "PE",
+                "company": "USACE Louisville District"
+            }
+        },
+        {
+            "name": "“Franklin County Court House in Frankfort, Kentucky” ",
+            "time": ["3:00 pm", "3:30 pm"],
+            "speaker": {
+                "name": "Chris Griggs",
+                "company": "Dwyer Companies"
+            }
+        },
+        {
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["3:30 pm", "4:00 pm"]
+        },
+        {
+            "name": "“The Varied Use of Compaction Grouting for Ground Improvement and Structure Rehabilitation”",
+            "time": ["4:00 pm", "4:30 pm"],
+            "speaker": {
+                "name": "Tom Szynakiewicz",
+                "title": "PE, D.GE, Director",
+                "company": "Grouting and Foundation Division, GeoStabilization International"
+            }
+        },
+        {
+            "name": "“Optimization of Jet Grouting Technology to Solve Challenging Urban Site Conditions”",
+            "time": ["4:30 pm", "5:00 pm"],
+            "speaker": {
+                "name": "James C. Myers",
+                "title": "PE",
+                "company": "Moretrench"
+            }
+        },
+        {
+            "name": "<strong>Adjourn</strong>",
+            "time": ["5:00 pm", "5:05 pm"]
+        }
+    ],
+    "registration": {
+        "earlyDeadline": "2015-11-21",
+        "prices": {
+            "student": {
+                "early": "$25",
+                "regular": "$50"
+            },
+            "nonStudent": {
+                "early": "$150",
+                "regular": "$175"
+            },
+            "exhibitors": {
+                "regular": "$425",
+                "additional": "$75"
+            }
+        }
+    },
+    "sponsors": [
+        "ASCE Cincinnati Section Geotechnical Group",
+        "Kentucky Geotechnical Engineering Group, ASCE",
+        "University of Cincinnati, Department of Civil and Environmental Engineering",
+        "University of Kentucky, Department of Civil Engineering",
+        "University of Louisville, Department of Civil and Environmental Engineering"
+    ]
+}
