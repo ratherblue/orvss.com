@@ -2,7 +2,7 @@
     "host": "ASCE Cincinnati Section Geotechnical Group",
     "topic": "“Infrastructure Innovation in Geotechnical Design",
     "date": "2017-11-17",
-    "pdf": "ORVSS XLVI Seminar.pdf",
+    "pdf": "ORVSS XLVIII.PDF",
     "address": {
         "line1": "Hilton Netherland Plaza",
         "line2": "35 W 5th Street",
@@ -65,174 +65,155 @@
         },
         {
             "name": "<strong>Registration</strong>",
-            "time": ["7:20 am", "8:00 am"]
+            "time": ["7:30 am", "8:15 am"]
         },
         {
             "name": "Welcome Remarks",
-            "time": ["8:00 am", "8:15 am"]
+            "time": ["8:15 am", "8:30 am"],
+            "speaker":
+              {
+                "name": "Mark Salveter",
+                "title": "PE",
+                "company": "Geopier Foundation Company"
+              }
+
         },
         {
-            "name": "“Grout Curtain Construction for the Thornton Reservoir Project”",
-            "time": ["8:15 am", "8:45 am"],
+            "name": "“Case Studies on Geotechnical Instrumentation”",
+            "time": ["8:30 am", "9:10 am"],
+            "speaker":
+                {
+                    "name": "David Westendorf",
+                    "title": "PE",
+                    "company": "Terracon Consultants, Inc."
+                }
+
+        },
+        {
+            "name": "“Case Study – Vehicle Sustainment Brigade Complex TEMF Located at Fort Campbell, KY”",
+            "time": ["9:10 am", "10:10 am"],
+            "speaker": {
+                "name": "Steven W. Shifflett",
+                "title": "PE",
+                "company": "US Army Corps of Engineers – Louisville District"
+            }
+        },
+        {
+            "name": "“Innovative Design for the Merchants Bridge West Approach Reconstruction for TRRA in St. Louis, MO”",
+            "time": ["10:10 am", "10:50 am"],
             "speakers": [
                 {
-                    "name": "Jonathon R. Bulger",
+                    "name": "Lyndsie Janbakhsh",
                     "title": "PE"
                 },
                 {
-                    "name": "Raymond J. Franz",
-                    "title": "PE, D.GE",
-                    "company": "Hayward Baker Inc."
+                    "name": "Kevin Kriete",
+                    "title": "PE",
+                    "company": " HDR, Inc"
                 }
             ]
         },
         {
-            "name": "“Grouting Solutions for Cincinnati Music Hall”",
-            "time": ["8:45 am", "9:15 am"],
+            "name": "<strong>Break</strong>",
+            "time": ["10:50 am", "11:05 am"]
+        },
+        {
+            "name": "“Use of Small Diameter Micropiles to Mitigate Scour around Bridge Embankments”",
+            "time": ["11:05 am", "11:45 am"],
             "speaker": {
-                "name": "George C. Webb",
-                "title": "PE, LEED AP",
-                "company": "Terracon"
+                "name": "Nathan Beard",
+                "title": "PE",
+                "company": "GeoStabilization International"
             }
         },
         {
-            "name": "“Jet Grouting Solution for the Resolution of Offshore Bridge Pier Retrofit Challenges”",
-            "time": ["9:15 am", "9:45 am"],
+            "name": "<strong>Lunch</strong>",
+            "time": ["11:45 am", "12:35 pm"]
+        },
+        {
+            "name": "Keynote Speaker Introduction",
+            "time": ["12:35 am", "12:45 pm"],
+            "speaker": {
+              "name": "Akshat Saxena",
+              "title": "EI",
+              "company": "Geotechnology, Inc."
+            }
+        },
+        {
+            "name": "Keynote: “Three-dimensional Levee and Floodwall Underseepage”",
+            "time": ["12:45 pm", "1:40 pm"],
+            "speaker": {
+                "name": "Timothy D. Stark",
+                "title": "PhD, PE",
+                "company": "University of Illinois, Urbana-Champaign"
+            }
+        },
+        {
+            "name": "“Asphalt Resurfacing After a Geohazard Repair” ",
+            "time": ["1:40 pm", "2:20 pm"],
             "speakers": [
-                {
-                    "name": "Lucian P. Spiteri",
-                    "title": "PE"
-                },
-                {
-                    "name": "John M. Stanbury"
-                },
-                {
-                    "name": "Alberto Morgante",
-                    "company": "Moretrench"
-                }
-            ]
+              {
+                "name": "Paul Travis",
+                "title": "EI, PLS",
+                "company": "Geotechnology, Inc."
+              },
+              {
+                "name": "Justin Anderson",
+                "title": "MS, PE",
+                "company": "Geostabilization International"
+              }
+          ]
         },
         {
-            "name": "<strong>Break / Technical Session</strong>",
-            "time": ["9:45 am", "10:15 am"]
-        },
-        {
-            "name": "“Formation Grouting for the Port of Miami Tunnel”",
-            "time": ["10:15 am", "10:45 am"],
+            "name": "“Geotechnical Challenges – The I-40/I-240 Interchange Project”",
+            "time": ["2:20 pm", "3:00 pm"],
             "speaker": {
-                "name": "Rick Deschamps",
-                "title": "PE, PhD",
-                "company": "Nicholson Construction Co."
+                "name": "Ashraf S. Elsayed",
+                "title": "PhD, PE, DGE",
+                "company": "Geotechnology, Inc."
             }
         },
         {
-            "name": "“Insitu Stabilization of Soils by Injection of High-Density Polyurethane: Principles and Applications”",
-            "time": ["10:45 am", "11:15 am"],
+            "name": "<strong>Break</strong>",
+            "time": ["3:00 pm", "3:20 pm"]
+        },
+        {
+            "name": "“Seismic Hazards in the Memphis Area”",
+            "time": ["3:20 pm", "4:00 pm"],
             "speaker": {
-                "name": "Randall W. Brown",
-                "title": "PE, PhD",
-                "company": "URETEK USA, Inc."
+                "name": "Ashraf S. Elsayed",
+                "title": "PhD, PE, DGE",
+                "company": "Geotechnology, Inc."
             }
         },
         {
-            "name": "“Laboratory Study of Acrylate Grout”",
-            "time": ["11:15 am", "11:45 am"],
-            "speakers": [
-                {
-                    "name": "L. Sebastian Bryson",
-                    "title": "PE, PhD, MASCE"
-                },
-                {
-                    "name": "Ryan Ortiz",
-                    "title": "EIT",
-                    "company": "University of Kentucky and Terracon Consultants, Inc."
-                }
-            ]
-        },
-        {
-            "name": "<strong>Lunch — Keynote Introduction</strong>",
-            "time": ["11:45 am", "12:45 pm"]
-        },
-        {
-            "name": "Keynote Speaker",
-            "time": ["12:45 pm", "1:45 pm"],
+            "name": "“Dam Structures Improvements for a Transportation Project”",
+            "time": ["4:00 pm", "4:35 pm"],
             "speaker": {
-                "name": "James Warner",
-                "title": "Consulting Engineer",
-                "company": "Warner Engineering Services"
+                "name": "Richard L. Williams",
+                "title": "PhD, PE",
+                "company": "Stantec Consulting Services, Inc."
             }
         },
         {
-            "name": "<strong>Break / Technical Session</strong>",
-            "time": ["1:45 pm", "2:00 pm"]
-        },
-        {
-            "name": "“Mine Remediation at the I-470/Pryor Road Interchange”",
-            "time": ["2:00 pm", "2:30 pm"],
-            "speaker": {
-                "name": "Sheryl D. Gallagher",
-                "title": "PE",
-                "company": "GEOTECHNOLOGY, INC."
-            }
-        },
-        {
-            "name": "“Rough River Dam: Foundation Investigation and Remediation through Grouting”",
-            "time": ["2:30 pm", "3:00 pm"],
-            "speaker": {
-                "name": "Will Ailstock",
-                "title": "PE",
-                "company": "USACE Louisville District"
-            }
-        },
-        {
-            "name": "“Franklin County Court House in Frankfort, Kentucky” ",
-            "time": ["3:00 pm", "3:30 pm"],
-            "speaker": {
-                "name": "Chris Griggs",
-                "company": "Dwyer Companies"
-            }
-        },
-        {
-            "name": "<strong>Break / Technical Session</strong>",
-            "time": ["3:30 pm", "4:00 pm"]
-        },
-        {
-            "name": "“The Varied Use of Compaction Grouting for Ground Improvement and Structure Rehabilitation”",
-            "time": ["4:00 pm", "4:30 pm"],
-            "speaker": {
-                "name": "Tom Szynakiewicz",
-                "title": "PE, D.GE, Director",
-                "company": "Grouting and Foundation Division, GeoStabilization International"
-            }
-        },
-        {
-            "name": "“Optimization of Jet Grouting Technology to Solve Challenging Urban Site Conditions”",
-            "time": ["4:30 pm", "5:00 pm"],
-            "speaker": {
-                "name": "James C. Myers",
-                "title": "PE",
-                "company": "Moretrench"
-            }
-        },
-        {
-            "name": "<strong>Adjourn</strong>",
-            "time": ["5:00 pm", "5:05 pm"]
+            "name": "<strong>Closing Remarks</strong>",
+            "time": ["4:35 pm", "4:45 pm"]
         }
     ],
     "registration": {
         "earlyDeadline": "2015-11-21",
         "prices": {
             "student": {
-                "early": "$25",
+                "early": "$40",
                 "regular": "$50"
             },
             "nonStudent": {
                 "early": "$150",
-                "regular": "$175"
+                "regular": "$200"
             },
             "exhibitors": {
-                "regular": "$425",
-                "additional": "$75"
+                "regular": "$500",
+                "additional": "$100"
             }
         }
     },
