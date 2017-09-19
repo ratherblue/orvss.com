@@ -52,7 +52,7 @@
             "url": "#contact"
         },
         {
-            "title": "Registration (Coming Soon)",
+            "title": "Registration",
             "url": "#registration"
         }
     ]/>
@@ -205,13 +205,13 @@
       <li>Coffee and pastries during registration</li>
       <li>Morning and afternoon refreshment breaks</li>
       <li>Lunch</li>
-      <li>Bound copy of ORVSS XLV Proceedings</li>
+      <li>Bound copy of ORVSS XLVIII Proceedings</li>
       <li>Certificate for 7.5 PDHs
     </ul>
 
-    <p>Note: To register via mail, download the <a href="${event.pdf}">ORVSS XLV</a> and use the registration form.</p>
+    <p>Note: To register via mail, download the <a href="${event.pdf}">ORVSS XLVIII</a> and use the registration form.</p>
 
-    <#--<@form />-->
+    <@form />
 
     <p><strong>Note:</strong> Pre-registration is essential to ensure receipt of bound proceedings and to facilitate morning registration. Also, Early Registration ends November 5, 2017 with Regular Registration beginning November 6, 2017.</p>
 
@@ -270,20 +270,29 @@
             </tr>
         </tbody>
     </table>
-
-    <h3>Cost of Registration Includes:</h3>
-
-    <ul>
-        <li>Seminar admission and Exhibitor’s Fair</li>
-        <li>Coffee and pastries during registration </li>
-        <li>Lunch provided by Marriott</li>
-        <li>Morning and afternoon refreshment breaks</li>
-        <li>Bound copy of ORVSS XLVI Proceedings</li>
-        <li>Certificate for 7.5 PDHs</li>
-    </ul>
 </#macro>
 
 <#macro form>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="registration-form">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="TSBXWYA56JKWU">
+<table>
+<tr><td><input type="hidden" name="on0" value="Options">Options</td></tr><tr><td><select name="os0">
+                <option value="Early Individual Registration">Early Individual Registration $150.00 USD</option>
+                <option value="Regular Individual Registration">Regular Individual Registration $200.00 USD</option>
+                <option value="Early Full-time Student Registration">Early Full-time Student Registration $40.00 USD</option>
+                <option value="Regular Full-time Student Registration">Regular Full-time Student Registration $50.00 USD</option>
+                <option value="Exhibitor Registration">Exhibitor Registration $500.00 USD</option>
+                <option value="Additional Individual Registration with Paid Exhibitor (Limit 2">Additional Individual Registration with Paid Exhibitor (Limit 2 $100.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</#macro>
+
+<#macro form2>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="registration-form">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="KKEQYAWC62XH6">
